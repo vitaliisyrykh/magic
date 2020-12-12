@@ -7,7 +7,7 @@
 }
 
 .container{
-  border: 10px solid red;
+  border: 20px solid red;
   border-radius: 10px;
   /* min-width: 300px;
   max-width: 1400px;
@@ -18,11 +18,12 @@
 .content{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
-  /* margin: 30px 50px; */
+   margin: 30px 100px; 
+   text-align: center;
 }
 .row{
   justify-content: space-around;
@@ -36,4 +37,9 @@
 .headingContent{
   font-family: sans-serif;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 575px){
+  p{
+    min-width: 200px;
+  }
 }
