@@ -1,0 +1,7 @@
+@import "./reset.css";
+@import "./bootstrap-grid.css";
+
+
+*{
+  box-sizing: border-box;
+}
