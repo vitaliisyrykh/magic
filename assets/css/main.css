@@ -1,55 +1,57 @@
 @import "./reset.css";
 @import "./bootstrap-grid.css";
 
-
-*{
+* {
   box-sizing: border-box;
 }
 
-.container{
+.container {
   border: 20px solid red;
   border-radius: 10px;
   /* min-width: 300px;
   max-width: 1400px;
   
   max-height: 600px; */
-  
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
-   margin: 30px 100px 15px 100px; 
-   text-align: center;
+  margin: 30px 100px 15px 100px;
+  text-align: center;
 }
-.row{
+.row {
   justify-content: space-around;
 }
-.col{
+.col {
   margin: 0 -20rem;
 }
-.icons{
+.icons {
   --size: 60px;
   width: var(--size);
   height: var(--size);
-
 }
-.headingContent{
+.headingContent {
   font-family: sans-serif;
   font-size: 1.5rem;
 }
-@media screen and (max-width: 575px){
-  .container{
+@media screen and (max-width: 575px) {
+  .container {
     overflow: auto;
-    flex-wrap: wrap;
-  } 
-  .col{
+
+    justify-content: center;
+  }
+  .content {
+   margin: 5px ;
+  }
+  .col {
     margin: 0 0;
   }
-  p{
+  .fitchInfo {
+    text-align: center;
     min-width: 200px;
   }
 }
